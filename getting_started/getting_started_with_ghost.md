@@ -4,8 +4,8 @@ Ghost是给你一个更简单、更有趣的方式来编辑和上传你自己文
 
 ### 第一步：安装并启动Ghost
 
-在开始Ghost之前，首先要安装它。这里有不少安装Ghost的方式，取决于你要装在哪个系统上。这篇文档着重于以手动的方式在标准的Linux VPS[^1]上运行Ghost。
-[^1]: VPS（Virtual Private Server 虚拟专用服务器）技术，将一部服务器分割成多个虚拟专享服务器的优质服务。
+在开始Ghost之前，首先要安装它。这里有不少安装Ghost的方式，取决于你要装在哪个系统上。这篇文档着重于以手动的方式在标准的Linux VPS上运行Ghost。
+
 另外，如果你是一名开发者，你可以在GigHub上的[Ghost README](https://github.com/TryGhost/Ghost#ghost-)文档中找到基础开发安装步骤。或者你只是想把Ghost安装在你自己的电脑玩玩，那么你看看我们关于在[Mac](http://support.ghost.org/installing-ghost-mac/)或者[Windows](http://support.ghost.org/installing-ghost-windows/)上安装的说明。
 
 除了手动安装，还有很多选项，例如使用[Bitnami](https://wiki.bitnami.com/Applications/BitNami_Ghost)，[Rackspace deployments](http://developer.rackspace.com/blog/launch-ghost-with-rackspace-deployments.html) 或者 [DigitalOcean one-click install](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-ghost-application)。在[部署Ghost](http://support.ghost.org/deploying-ghost/)这篇文章中有更多的部署方式可供参考。
@@ -53,9 +53,7 @@ Ghost是给你一个更简单、更有趣的方式来编辑和上传你自己文
 	注意：
 	千万不要直接在80端口中启动Ghost。这被认为存在一种安全风险。我们经常推荐使用一种代理，例如nginx。
 
-##### 配置SSL[^2]
-
-[^2]:SSL(Secure Sockets Layer 安全套接层),及其继任者传输层安全（Transport Layer Security，TLS）是为网络通信提供安全及数据完整性的一种安全协议
+##### 配置SSL
 
 最后，如果你已经在空间中配置了nginx，我们也强烈推荐[配置SSL](http://support.ghost.org/setup-ssl-self-hosted-ghost/)。这是对于Ghost管理员格外重要，通过它你能更安全的登录。为管理员如何使用多种租户地配置SSL的细节在[配置Ghost](http://support.ghost.org/config/#ssl)的指南中SSl部分中被找到。关于配置nginx的详细说明在[ssl配置](http://support.ghost.org/setup-ssl-self-hosted-ghost/)指南中。
 
