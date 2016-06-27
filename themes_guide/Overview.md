@@ -17,3 +17,6 @@
    是否想和其他主题开发者聊天呢？前往我们公共的Slack组的#themes频道吧。
 
 ### 关于Ghost主题 
+Ghost主题正试图变得易于创建和维护。他们使用[Handlebars](http://handlebarsjs.com/)模板语言，它们几乎不涉及逻辑并通过[「助手」](http://themes.ghost.org/v0.8.0/docs/helpers)创建完全的模板（HTML部分）和任何逻辑（JavaScript部分）分离。这种分离能够使得设计者和开发者之间在开发时有更方便的合作。彻底学习Handlebars框架姜维帮你意识到主体化Ghost的全部力量，最后，我们继续扩展我们文档中的[Handlebars](http://themes.ghost.org/v0.8.0/docs/handlebars)部分。
+
+使用Handlebars，你可以使用你想要的方式为主题创建静态的HTML和CSS，然后替代Handlebars表达式中的任何你想用的动态数据。举个例子，你可能想要使用`{{title}}`，这是用来引用叫`title`的数据的handlebars表达式，来输出一篇文章的标题。所有Handlebars表当时都包含在两个或三个花括号中，所以它们识别起来非常简单。
