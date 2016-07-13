@@ -40,3 +40,24 @@
 
 当展示文章的列表时，你可能也需要使用[{{pagination}}](http://themes.ghost.org/v0.8.0/docs/pagination)命令行，这样你可以在多个文章页面之间跳转导航。
 
+#### 单篇文章
+`post.hbs`只允许获取一篇文章，通过使用文章的现实表达式进行展示，例如：
+
+	{{#post}}
+	// here we are in the post scope
+	{{/post}}
+	
+在[post文档](http://themes.ghost.org/docs/post)中包含了更多的可在文章范围或者列表以及单篇文章中展示的细节。
+
+#### 文章作者
+当你处在显示文章内容的范围中，你可以通过使用`{{author}}`的数据表达式展示关于文章作者的细节。你用路径表达式来得到作者的相关属性，例如用`{{author.name}}`来展示作者的名字。
+
+你可以使用`{{author}}`在它生效的HTML代码范围内展示作者的名字超链接，可以链接到作者页面。
+
+你可以参照如下代码：
+
+	{{#author}}
+		<a href="{{url}}">{{name}}</a>
+	{{/author}}
+
+查看关于`{{author}}`的相关章节，获取更多关于author表达式的信息已经可用到的子属性。
