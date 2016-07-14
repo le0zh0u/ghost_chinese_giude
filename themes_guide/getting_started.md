@@ -61,3 +61,27 @@
 	{{/author}}
 
 查看关于`{{author}}`的相关章节，获取更多关于author表达式的信息已经可用到的子属性。
+
+#### 文章标签
+在文章显示范围中，你也可以获取与文章相关的一系列标签。你可以使用`{{tages}}`来展示自己定义的标签，可以使用一下的表达式完成：
+
+	<ul>
+		{{#foreach tags}}
+			<li>{{name}}</li>
+		{{/foreach}}
+	</ul>
+
+更多的细节选项可以查看关于`{{tags}}`章节。
+
+#### 全局设置
+Ghost主题可以通过`@blog`全局数据访问器来获得一些全局设置，例如`{{@blog.title}}`来展示你博客的标题。查看[@blog](http://themes.ghost.org/docs/blog)获得更多细节。
+
+#### 创建你的主题
+如果你已经为你的主题创建了基本的`index.hbs`和`post.hbs`模板，你就可以开始为你主题的各方面添加自定义模板，例如标签或者作者页面。各种可用模板的细节可以在[结构](http://themes.ghost.org/v0.8.0/docs/structure)文档中被找到。[handlebars](http://themes.ghost.org/v0.8.0/docs/handlebars)指南详述了如何使用handlebars，以及关于各种[helpers](http://themes.ghost.org/v0.8.0/docs/helpers)的文档解释了所有当你需要显示各种类型的数据可以使用的选项。
+
+#### 测试你的主题
+如果你正在寻找假的或者测试的内容来帮助你测试你的主题，你会在[GitHub issue](https://github.com/TryGhost/Ghost/issues/1553)中很方便地找到合适的链接。
+
+
+
+Leo
